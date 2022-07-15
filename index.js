@@ -115,20 +115,37 @@
 // my world`)
 
 
-// * 
-let person = {
-    name: 'Vishnu',
-    age: '30',
-    isMarried: false,
-    homeAddress: {
-        long: 55.32,
-        lat: 25.36,
-    },
-    friends: ['ram', 'vishnu', 'raja', 'krishna'],
-}
+// * Exercise
+// let person = {
+//     name: 'Vishnu',
+//     age: '30',
+//     isMarried: false,
+//     homeAddress: {
+//         long: 55.32,
+//         lat: 25.36,
+//     },
+//     friends: ['ram', 'vishnu', 'raja', 'krishna'],
+// }
 
-console.log(person);
-console.log(person.name);
-console.log(person.homeAddress.lat);
-console.log(person.friends[0]);
-console.log(typeof person)
+// console.log(person);
+// console.log(person.name);
+// console.log(person.homeAddress.lat);
+// console.log(person.friends[0]);
+// console.log(typeof person)
+
+
+
+// !Java Script Operators
+
+
+// *Arithmetic Operators
+
+let num1 = 10;
+let num2 = 5;
+
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
+console.log(num1 ** num2);
+console.log(num1 % num2);
