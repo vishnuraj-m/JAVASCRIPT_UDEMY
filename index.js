@@ -192,6 +192,7 @@
 // *Logical Operators
 // ! and (&&), or (||), not(!)
 
+
 // let price = 10;
 
 // console.log(price > 5 && price < 15);
@@ -213,4 +214,3 @@ console.log(price !== 20);
 console.log(price === '10');
 console.log(price == '10');
 
-// 
