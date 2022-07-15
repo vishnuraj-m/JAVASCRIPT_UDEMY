@@ -158,20 +158,32 @@
 // console.log(num1, num2);
 
 
-let num1 = 10;
-let num2 = num1 + 5;
-num1 += 5;
-console.log(num2);
+// let num1 = 10;
+// let num2 = num1 + 5;
+// num1 += 5;
+// console.log(num2);
 
-num1 = num1 - 5;
-num1 -= 5;
+// num1 = num1 - 5;
+// num1 -= 5;
 
-num1 = num1 * 5;
-num1 *= 5
+// num1 = num1 * 5;
+// num1 *= 5
 
-num1 = num1 + 5;
-num1 += 5;
+// num1 = num1 + 5;
+// num1 += 5;
 
-num1++;
+// num1++;
 
-num1--;
+// num1--;
+
+
+// *Comparison Operators
+// ! >, <, >=, <=, ===, !==
+
+let price = 200;
+console.log(price > 300);
+console.log(price >= 200);
+console.log(price < 100);
+console.log(price <= 500);
+console.log(price === 200);
+console.log(price !== 200);
