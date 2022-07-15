@@ -205,19 +205,24 @@
 
 // *Equality Operators
 
-let price = 10;
-console.log(price === 10);
-console.log(price === 20);
-console.log(price !== 10);
-console.log(price !== 20);
+// let price = 10;
+// console.log(price === 10);
+// console.log(price === 20);
+// console.log(price !== 10);
+// console.log(price !== 20);
 
-console.log(price === '10');
-console.log(price == '10');
-let price = 10;
-
-console.log(price > 5 && price < 15);
+// console.log(price === '10');
+// console.log(price == '10');
 
 
-console.log(price > 50 || price < 15);
 
-console.log(!(price > 50))
+
+// *Swap
+
+let num1 = 10;
+let num2 = 15;
+let temp = num1;
+num1 = num2;
+num2 = temp
+
+console.log(`num1:`, num1, `num2:`, num2)
