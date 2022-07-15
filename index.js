@@ -180,10 +180,23 @@
 // *Comparison Operators
 // ! >, <, >=, <=, ===, !==
 
-let price = 200;
-console.log(price > 300);
-console.log(price >= 200);
-console.log(price < 100);
-console.log(price <= 500);
-console.log(price === 200);
-console.log(price !== 200);
+// let price = 200;
+// console.log(price > 300);
+// console.log(price >= 200);
+// console.log(price < 100);
+// console.log(price <= 500);
+// console.log(price === 200);
+// console.log(price !== 200);
+
+
+// *Logical Operators
+// ! and (&&), or (||), not(!)
+
+let price = 10;
+
+console.log(price > 5 && price < 15);
+
+
+console.log(price > 50 || price < 15);
+
+console.log(!(price > 50))
