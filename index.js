@@ -441,3 +441,12 @@
 // for (let num = 1; num++;) {
 //     console.log(num)
 // }
+
+
+// *Nested Loop
+
+for (let vis = 1; vis <= 3; vis++) {
+    for (let ram = 1; ram <= 3; ram++) {
+        console.log(vis, ram)
+    }
+}
