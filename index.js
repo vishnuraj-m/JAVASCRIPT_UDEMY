@@ -64,7 +64,7 @@
 
 
 
-// // * Reference types: Function
+// * Reference types: Function
 
 // function showMyName() {
 //     console.log('My Name is Vishnu');
@@ -234,12 +234,33 @@
 
 // *if else
 
-let num = 0;
+// let num = 0;
 
-if (num > 0) {
-    console.log(`Positive Number`);
-} else if (num < 0) {
-    console.log(`Negative Number`);
-} else {
-    console.log(`Number is Zero`);
+// if (num > 0) {
+//     console.log(`Positive Number`);
+// } else if (num < 0) {
+//     console.log(`Negative Number`);
+// } else {
+//     console.log(`Number is Zero`);
+// }
+
+
+//* Switch case
+
+
+let color = 'black';
+switch (color) {
+    case 'black':
+        console.log(`Color is Black`);
+        break;
+    case 'White':
+        console.log(`Color is White`);
+        break;
+    case 'Red':
+        console.log(`Color is Red`);
+        break;
+
+    default:
+        console.log(`Not in list`)
+        break;
 }
