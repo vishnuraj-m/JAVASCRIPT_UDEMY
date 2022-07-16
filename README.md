@@ -26,3 +26,17 @@
 -  Ternary Operators
 -  Switch case with multiple logical operators
 
+
+<h4 align="left">Java Script Loops</h4>
+
+-  For loop
+-  While loop
+-  Do While loop
+-  For in loop
+-  For of loop
+-  Break and continue
+-  Infinite Loops
+-  Nested Loops
+
+
+
