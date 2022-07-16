@@ -420,18 +420,24 @@
 
 // !Break
 
-for (let num = 1; num <= 20; num++) {
-    if (num === 10) {
-        break;
-    }
-    console.log(num)
-}
+// for (let num = 1; num <= 20; num++) {
+//     if (num === 10) {
+//         break;
+//     }
+//     console.log(num)
+// }
 
 // !Continue
 
-for (let num = 1; num <= 20; num++) {
-    if (num === 10) {
-        continue;
-    }
-    console.log(num)
-}
+// for (let num = 1; num <= 20; num++) {
+//     if (num === 10) {
+//         continue;
+//     }
+//     console.log(num)
+// }
+
+// * Infinite loop
+
+// for (let num = 1; num++;) {
+//     console.log(num)
+// }
