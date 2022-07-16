@@ -357,12 +357,21 @@
 
 // * For Loop
 
-for (let index = 1; index <= 5; index++) {
-    console.log('Vishnu', index);
-}
+// for (let index = 1; index <= 5; index++) {
+//     console.log('Vishnu', index);
+// }
 
 
 
-for (let index = 5; index >= 1; index--) {
-    console.log('Vishnu', index);
+// for (let index = 5; index >= 1; index--) {
+//     console.log('Vishnu', index);
+// }
+
+
+// *While
+let index = 1;
+
+while (index <= 5) {
+    console.log('Hi Vishnu', index);
+    index++;
 }
