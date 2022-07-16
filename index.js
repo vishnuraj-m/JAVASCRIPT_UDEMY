@@ -369,9 +369,18 @@
 
 
 // *While
-let index = 1;
 
-while (index <= 5) {
-    console.log('Hi Vishnu', index);
-    index++;
-}
+// let index = 1;
+
+// while (index <= 5) {
+//     console.log('Hi Vishnu', index);
+//     index++;
+// }
+
+// *Do While
+
+let service = 1;
+do {
+    console.log('Hi Vishnu', service);
+    service++
+} while (service <= 5)
