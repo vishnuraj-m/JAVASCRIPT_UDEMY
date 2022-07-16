@@ -268,19 +268,33 @@
 
 // *Ternary Operators
 
-let num1 = 10;
-let num2 = 20;
-let maxValue;
-if (num1 > num2) {
-    maxValue = num1;
+// let num1 = 10;
+// let num2 = 20;
+// let maxValue;
+// if (num1 > num2) {
+//     maxValue = num1;
+// } else {
+//     maxValue = num2
+// }
+
+// console.log(maxValue);
+
+
+// // !11111111111111
+
+// let max = num1 > num2 ? num1 : num2;
+// console.log(max);
+
+
+// *FizzBuzz
+
+let number = 10;
+if (number % 3 === 0) {
+    console.log('Fizz');
+} else if (number % 5 === 0) {
+    console.log('Buzz');
+} else if (number % 3 === 0 && number % 5 === 0) {
+    console.log('FizzBuzz');
 } else {
-    maxValue = num2
+    console.log('Nothing');
 }
-
-console.log(maxValue);
-
-
-// !11111111111111
-
-let max = num1 > num2 ? num1 : num2;
-console.log(max);
