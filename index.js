@@ -379,8 +379,30 @@
 
 // *Do While
 
-let service = 1;
-do {
-    console.log('Hi Vishnu', service);
-    service++
-} while (service <= 5)
+// let service = 1;
+// do {
+//     console.log('Hi Vishnu', service);
+//     service++
+// } while (service <= 5)
+
+
+// * for in loop
+
+const obj = {
+    name: 'Vishnu',
+    age: 30,
+}
+for (let key in obj) {
+    console.log(key, obj[key]);
+}
+
+// ********
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+
+
+// *******
+
+for (let index in numbers) {
+    console.log(index, numbers[index]);
+}
