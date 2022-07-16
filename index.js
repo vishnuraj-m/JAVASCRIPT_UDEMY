@@ -219,10 +219,27 @@
 
 // *Swap
 
-let num1 = 10;
-let num2 = 15;
-let temp = num1;
-num1 = num2;
-num2 = temp
+// let num1 = 10;
+// let num2 = 15;
+// let temp = num1;
+// num1 = num2;
+// num2 = temp
 
-console.log(`num1:`, num1, `num2:`, num2)
+// console.log(`num1:`, num1, `num2:`, num2)
+
+
+
+
+// !Conditional statement
+
+// *if else
+
+let num = 0;
+
+if (num > 0) {
+    console.log(`Positive Number`);
+} else if (num < 0) {
+    console.log(`Negative Number`);
+} else {
+    console.log(`Number is Zero`);
+}
