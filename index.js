@@ -445,8 +445,20 @@
 
 // *Nested Loop
 
-for (let vis = 1; vis <= 3; vis++) {
-    for (let ram = 1; ram <= 3; ram++) {
-        console.log(vis, ram)
-    }
-}
+// for (let vis = 1; vis <= 3; vis++) {
+//     for (let ram = 1; ram <= 3; ram++) {
+//         console.log(vis, ram)
+//     }
+// }
+
+
+// ! STRING
+
+
+// *String Basics
+
+let country = 'India';
+console.log(country);
+console.log(typeof country);
+console.log(country[4]);
+console.log(country.charAt(1))
