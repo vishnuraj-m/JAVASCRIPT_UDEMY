@@ -302,34 +302,52 @@
 
 // *FizzBuzz Ternary
 
-let number = 15;
-console.log(number % 3 === 0 && number % 5 === 0
-    ? 'FizzBuzz'
-    : number % 3 === 0
-        ? 'Fizz'
-        : number % 3 === 0
-            ? 'Buzz'
-            : 'Nothing'
-);
+// let number = 15;
+// console.log(number % 3 === 0 && number % 5 === 0
+//     ? 'FizzBuzz'
+//     : number % 3 === 0
+//         ? 'Fizz'
+//         : number % 3 === 0
+//             ? 'Buzz'
+//             : 'Nothing'
+// );
 
 
 // !Exercise Grading system
 
-let mark = 90;
-if (mark < 0 || mark > 100) {
-    console.log('Invalid Mark');
-} else if (mark >= 80 && mark <= 100) {
-    console.log('A+');
-} else if (mark >= 70 && mark <= 79) {
-    console.log('A');
-} else if (mark >= 60 && mark <= 69) {
-    console.log('A-');
-} else if (mark >= 50 && mark <= 59) {
-    console.log('B');
-} else if (mark >= 40 && mark <= 49) {
-    console.log('C');
-} else if (mark >= 33 && mark <= 39) {
-    console.log('D');
-} else {
-    console.log('Fail')
+// let mark = 90;
+// if (mark < 0 || mark > 100) {
+//     console.log('Invalid Mark');
+// } else if (mark >= 80 && mark <= 100) {
+//     console.log('A+');
+// } else if (mark >= 70 && mark <= 79) {
+//     console.log('A');
+// } else if (mark >= 60 && mark <= 69) {
+//     console.log('A-');
+// } else if (mark >= 50 && mark <= 59) {
+//     console.log('B');
+// } else if (mark >= 40 && mark <= 49) {
+//     console.log('C');
+// } else if (mark >= 33 && mark <= 39) {
+//     console.log('D');
+// } else {
+//     console.log('Fail')
+// }
+
+
+// !Exercise Switch
+
+let number = 0;
+
+switch (true) {
+    case number > 0:
+        console.log('This is Positive Number');
+        break;
+
+    case number < 0:
+        console.log('This is Negative Number');
+        break;
+    default:
+        console.log('Number is Zero')
+        break;
 }
