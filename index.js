@@ -337,17 +337,32 @@
 
 // !Exercise Switch
 
-let number = 0;
+// let number = 0;
 
-switch (true) {
-    case number > 0:
-        console.log('This is Positive Number');
-        break;
+// switch (true) {
+//     case number > 0:
+//         console.log('This is Positive Number');
+//         break;
 
-    case number < 0:
-        console.log('This is Negative Number');
-        break;
-    default:
-        console.log('Number is Zero')
-        break;
+//     case number < 0:
+//         console.log('This is Negative Number');
+//         break;
+//     default:
+//         console.log('Number is Zero')
+//         break;
+// }
+
+
+// !  LOOPS
+
+// * For Loop
+
+for (let index = 1; index <= 5; index++) {
+    console.log('Vishnu', index);
+}
+
+
+
+for (let index = 5; index >= 1; index--) {
+    console.log('Vishnu', index);
 }
