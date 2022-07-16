@@ -410,8 +410,28 @@
 
 // * for of loop
 
-let numArray = [1, 2, 3, 4, 5, 6, 7];
+// let numArray = [1, 2, 3, 4, 5, 6, 7];
 
-for (let num of numArray) {
+// for (let num of numArray) {
+//     console.log(num)
+// }
+
+// *Break and continue
+
+// !Break
+
+for (let num = 1; num <= 20; num++) {
+    if (num === 10) {
+        break;
+    }
+    console.log(num)
+}
+
+// !Continue
+
+for (let num = 1; num <= 20; num++) {
+    if (num === 10) {
+        continue;
+    }
     console.log(num)
 }
