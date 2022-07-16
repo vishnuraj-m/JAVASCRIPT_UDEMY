@@ -248,19 +248,39 @@
 //* Switch case
 
 
-let color = 'black';
-switch (color) {
-    case 'black':
-        console.log(`Color is Black`);
-        break;
-    case 'White':
-        console.log(`Color is White`);
-        break;
-    case 'Red':
-        console.log(`Color is Red`);
-        break;
+// let color = 'black';
+// switch (color) {
+//     case 'black':
+//         console.log(`Color is Black`);
+//         break;
+//     case 'White':
+//         console.log(`Color is White`);
+//         break;
+//     case 'Red':
+//         console.log(`Color is Red`);
+//         break;
 
-    default:
-        console.log(`Not in list`)
-        break;
+//     default:
+//         console.log(`Not in list`)
+//         break;
+// }
+
+
+// *Ternary Operators
+
+let num1 = 10;
+let num2 = 20;
+let maxValue;
+if (num1 > num2) {
+    maxValue = num1;
+} else {
+    maxValue = num2
 }
+
+console.log(maxValue);
+
+
+// !11111111111111
+
+let max = num1 > num2 ? num1 : num2;
+console.log(max);
