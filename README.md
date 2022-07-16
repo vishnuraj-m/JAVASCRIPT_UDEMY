@@ -18,3 +18,11 @@
 -  Comparison Operators
 -  Logical Operators
 -  Equality Operators
+
+<h4 align="left">Conditional Statements</h4>
+
+-  If else
+-  Switch case
+-  Ternary Operators
+-  Switch case with multiple logical operators
+
