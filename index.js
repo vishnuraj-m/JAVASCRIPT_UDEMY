@@ -388,21 +388,30 @@
 
 // * for in loop
 
-const obj = {
-    name: 'Vishnu',
-    age: 30,
-}
-for (let key in obj) {
-    console.log(key, obj[key]);
-}
+// const obj = {
+//     name: 'Vishnu',
+//     age: 30,
+// }
+// for (let key in obj) {
+//     console.log(key, obj[key]);
+// }
 
-// ********
-let numbers = [1, 2, 3, 4, 5];
-console.log(numbers);
+// // ********
+// let numbers = [1, 2, 3, 4, 5];
+// console.log(numbers);
 
 
-// *******
+// // *******
 
-for (let index in numbers) {
-    console.log(index, numbers[index]);
+// for (let index in numbers) {
+//     console.log(index, numbers[index]);
+// }
+
+
+// * for of loop
+
+let numArray = [1, 2, 3, 4, 5, 6, 7];
+
+for (let num of numArray) {
+    console.log(num)
 }
