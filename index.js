@@ -558,3 +558,10 @@ let testMessage1 = '\tHi vishnu "it\'s Nice Course",\nHow are you?'
 
 console.log(testMessage);
 console.log(testMessage1);
+
+
+//*****  String Immutability
+
+let test = 'Hi Vishnu';
+test = test + ' How are you?'
+console.log(test);
