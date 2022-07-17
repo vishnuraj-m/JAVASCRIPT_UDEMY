@@ -457,8 +457,92 @@
 
 // *String Basics
 
-let country = 'India';
-console.log(country);
-console.log(typeof country);
-console.log(country[4]);
-console.log(country.charAt(1))
+// let country = 'India';
+// console.log(country);
+// console.log(typeof country);
+// console.log(country[4]);
+// console.log(country.charAt(1))
+
+// *String Methods
+
+let message = 'Hi My name is Hi Vishnu';
+console.log(message);
+// !charAt
+console.log(message.charAt(1));
+// !toUpperCase
+console.log(message.toUpperCase());
+// !toLowerCase
+console.log(message.toLowerCase());
+// !includes
+console.log(message.includes('Vishnu'));
+// !startsWith
+console.log(message.startsWith('Hi'));
+// !endsWith
+console.log(message.endsWith('Vishnu'));
+
+
+
+// !search
+console.log(message.search('My'));
+// !indexOf
+console.log(message.indexOf('Hi'));
+// !lastIndexOf
+console.log(message.lastIndexOf('Hi'));
+
+
+
+// !toString
+let temp = 1234;
+
+let value = temp.toString();
+console.log(value);
+console.log(typeof value);
+
+let temp1 = [1, 2, 3, 4];
+
+let value1 = temp1.toString();
+console.log(value1);
+console.log(typeof value1);
+
+
+let temp2 = true;
+
+let value2 = temp2.toString();
+console.log(value2);
+console.log(typeof value2);
+
+
+// !Concat
+
+let m1 = 'Hi ';
+let m2 = 'My Name ';
+let m3 = 'is Vishnu';
+
+let m = m1.concat(m2, m3);
+console.log(m);
+
+
+let l = m1 + m2 + m3;
+console.log(l);
+
+// !Split
+let message1 = 'Hi My name is Hi Vishnu';
+console.log(message1.split(' '));
+
+
+//! Slice
+let message2 = 'Hi My name is Hi Vishnu';
+console.log(message2.slice(0, 5));
+console.log(message2.slice(6, 12));
+console.log(message2.slice(3));
+console.log(message2.slice());
+console.log(message2.slice(0));
+console.log(message2.slice(-12, -1));
+
+// !Substring
+
+let message3 = 'Hi My name is Hi Vishnu';
+console.log(message3.substring(0, 5))
+
+// !Substr
+console.log(message3.substr(0, 5))
