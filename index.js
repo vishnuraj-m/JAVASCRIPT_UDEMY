@@ -335,6 +335,8 @@
 // }
 
 
+
+
 // !Exercise Switch
 
 // let number = 0;
@@ -546,3 +548,13 @@ console.log(message3.substring(0, 5))
 
 // !Substr
 console.log(message3.substr(0, 5))
+
+
+
+// ***Escape Sequences
+
+let testMessage = "Hi vishnu it's Nice Course"
+let testMessage1 = '\tHi vishnu "it\'s Nice Course",\nHow are you?'
+
+console.log(testMessage);
+console.log(testMessage1);
