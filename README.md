@@ -38,5 +38,12 @@
 -  Infinite Loops
 -  Nested Loops
 
+<h4 align="left">String In Java Script</h4>
+
+-  String Basics
+-  String Methods
+-  Escape Sequences
+-  String Immutability
+
 
 
