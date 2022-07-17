@@ -467,101 +467,115 @@
 
 // *String Methods
 
-let message = 'Hi My name is Hi Vishnu';
-console.log(message);
+// let message = 'Hi My name is Hi Vishnu';
+// console.log(message);
 // !charAt
-console.log(message.charAt(1));
+// console.log(message.charAt(1));
 // !toUpperCase
-console.log(message.toUpperCase());
+// console.log(message.toUpperCase());
 // !toLowerCase
-console.log(message.toLowerCase());
+// console.log(message.toLowerCase());
 // !includes
-console.log(message.includes('Vishnu'));
+// console.log(message.includes('Vishnu'));
 // !startsWith
-console.log(message.startsWith('Hi'));
+// console.log(message.startsWith('Hi'));
 // !endsWith
-console.log(message.endsWith('Vishnu'));
+// console.log(message.endsWith('Vishnu'));
 
 
 
 // !search
-console.log(message.search('My'));
+// console.log(message.search('My'));
 // !indexOf
-console.log(message.indexOf('Hi'));
+// console.log(message.indexOf('Hi'));
 // !lastIndexOf
-console.log(message.lastIndexOf('Hi'));
+// console.log(message.lastIndexOf('Hi'));
 
 
 
 // !toString
-let temp = 1234;
+// let temp = 1234;
 
-let value = temp.toString();
-console.log(value);
-console.log(typeof value);
+// let value = temp.toString();
+// console.log(value);
+// console.log(typeof value);
 
-let temp1 = [1, 2, 3, 4];
+// let temp1 = [1, 2, 3, 4];
 
-let value1 = temp1.toString();
-console.log(value1);
-console.log(typeof value1);
+// let value1 = temp1.toString();
+// console.log(value1);
+// console.log(typeof value1);
 
 
-let temp2 = true;
+// let temp2 = true;
 
-let value2 = temp2.toString();
-console.log(value2);
-console.log(typeof value2);
+// let value2 = temp2.toString();
+// console.log(value2);
+// console.log(typeof value2);
 
 
 // !Concat
 
-let m1 = 'Hi ';
-let m2 = 'My Name ';
-let m3 = 'is Vishnu';
+// let m1 = 'Hi ';
+// let m2 = 'My Name ';
+// let m3 = 'is Vishnu';
 
-let m = m1.concat(m2, m3);
-console.log(m);
+// let m = m1.concat(m2, m3);
+// console.log(m);
 
 
-let l = m1 + m2 + m3;
-console.log(l);
+// let l = m1 + m2 + m3;
+// console.log(l);
 
 // !Split
-let message1 = 'Hi My name is Hi Vishnu';
-console.log(message1.split(' '));
+// let message1 = 'Hi My name is Hi Vishnu';
+// console.log(message1.split(' '));
 
 
 //! Slice
-let message2 = 'Hi My name is Hi Vishnu';
-console.log(message2.slice(0, 5));
-console.log(message2.slice(6, 12));
-console.log(message2.slice(3));
-console.log(message2.slice());
-console.log(message2.slice(0));
-console.log(message2.slice(-12, -1));
+// let message2 = 'Hi My name is Hi Vishnu';
+// console.log(message2.slice(0, 5));
+// console.log(message2.slice(6, 12));
+// console.log(message2.slice(3));
+// console.log(message2.slice());
+// console.log(message2.slice(0));
+// console.log(message2.slice(-12, -1));
 
 // !Substring
 
-let message3 = 'Hi My name is Hi Vishnu';
-console.log(message3.substring(0, 5))
+// let message3 = 'Hi My name is Hi Vishnu';
+// console.log(message3.substring(0, 5))
 
 // !Substr
-console.log(message3.substr(0, 5))
+// console.log(message3.substr(0, 5))
 
 
 
 // ***Escape Sequences
 
-let testMessage = "Hi vishnu it's Nice Course"
-let testMessage1 = '\tHi vishnu "it\'s Nice Course",\nHow are you?'
+// let testMessage = "Hi vishnu it's Nice Course"
+// let testMessage1 = '\tHi vishnu "it\'s Nice Course",\nHow are you?'
 
-console.log(testMessage);
-console.log(testMessage1);
+// console.log(testMessage);
+// console.log(testMessage1);
 
 
 //*****  String Immutability
 
-let test = 'Hi Vishnu';
-test = test + ' How are you?'
-console.log(test);
+// let test = 'Hi Vishnu';
+// test = test + ' How are you?'
+// console.log(test);
+
+
+// ! Objects
+
+const user = {
+    name: 'Vishnu',
+    age: 40,
+    hobby: 'Reading',
+}
+
+console.log(user);
+console.log(user.name);
+console.log(user['name']);
+console.log(user['age']);
