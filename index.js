@@ -647,32 +647,54 @@
 
 // *  Exercise Total Salary
 
-const salaries = {
-    vishnu: 2000,
-    raj: 4000,
-    ram: 5000,
-    krishna: 6000,
-    shiv: 8000
-}
+// const salaries = {
+//     vishnu: 2000,
+//     raj: 4000,
+//     ram: 5000,
+//     krishna: 6000,
+//     shiv: 8000
+// }
 
 
 //! * 1st method
 
-let sum = 0;
-for (let key in salaries) {
-    console.log(key, salaries[key]);
-    //! sum = sum + salaries[key];
-    sum += salaries[key];
-}
-console.log(sum);
+// let sum = 0;
+// for (let key in salaries) {
+//     console.log(key, salaries[key]);
+//! sum = sum + salaries[key];
+//     sum += salaries[key];
+// }
+// console.log(sum);
 
 //! *2nd method
-console.log(Object.keys(salaries));
-console.log(Object.values(salaries));
+// console.log(Object.keys(salaries));
+// console.log(Object.values(salaries));
 
 //! *3rd method
 
-for (let val of Object.values(salaries)) {
-    sum += val;
-}
-console.log(sum);
+// for (let val of Object.values(salaries)) {
+//     sum += val;
+// }
+// console.log(sum);
+
+
+
+// *Object Destructuring
+
+const user = {
+    name: 'vishnu',
+    age: 30,
+    favBook: {
+        bookName: 'Abcdefg',
+        author: 'xyz',
+    },
+};
+
+const { name, age, favBook } = user  //!!!!!!!  Object Destructuring
+const { bookName, author } = favBook  //!!!!!!!  Object Destructuring
+
+console.log(user.name); //* normal  
+console.log(name); //* after object destructuring
+console.log(age);
+console.log(favBook.bookName);
+console.log(favBook.author);
