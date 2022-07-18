@@ -753,31 +753,40 @@
 
 // ! Function Declaration
 
-function aboutMe(name, age) {
-    const message = `Hi it's me ${name} ${age} years old`
-    console.log(message);
-}
+// function aboutMe(name, age) {
+//     const message = `Hi it's me ${name} ${age} years old`
+//     console.log(message);
+// }
 
 //! Function Call
-aboutMe('Vishnu', 30);
-aboutMe('Ram', 26);
+// aboutMe('Vishnu', 30);
+// aboutMe('Ram', 26);
 
 
 // *** CALCULATE SUM
 
-function calSum(num1, num2) {
-    console.log(num1 + num2)
+// function calSum(num1, num2) {
+//     console.log(num1 + num2)
 
+// }
+// calSum(10, 10);
+
+// ****
+// let number1 = 20;
+// let number2 = 30;
+
+// function calcSum(number1, number2) {
+//     let sum = number1 + number2;
+//     return sum
+// }
+// let result = calcSum(10, 20)
+// console.log(result);
+
+
+// *Default Parameters
+
+function calSum(number1, number2, number3 = 50) {
+    let sum = number1 + number2 + number3;
+    return sum;
 }
-calSum(10, 10);
-
-
-let number1 = 20;
-let number2 = 30;
-
-function calcSum(number1, number2) {
-    let sum = number1 + number2;
-    return sum
-}
-let result = calcSum(10, 20)
-console.log(result);
+console.log(calSum(10, 20));
