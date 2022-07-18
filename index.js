@@ -723,3 +723,9 @@ const user = {
 const copiedUser = Object.assign({}, user);
 
 console.log(copiedUser);
+
+// * Math Object
+
+console.log(Math.PI);
+console.log(Math.random());
+console.log(Math.round(3.7))
