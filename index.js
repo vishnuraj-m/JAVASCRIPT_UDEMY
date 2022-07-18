@@ -398,12 +398,12 @@
 //     console.log(key, obj[key]);
 // }
 
-// // ********
+// ********
 // let numbers = [1, 2, 3, 4, 5];
 // console.log(numbers);
 
 
-// // *******
+// *******
 
 // for (let index in numbers) {
 //     console.log(index, numbers[index]);
@@ -607,14 +607,39 @@
 
 // *Object Methods This Keyword
 
+// const user = {
+//     name: 'Vishnu',
+//     age: 30,
+//     isMarried: true,
+//     friends: ['raja', 'ram',],
+//     selectColor: null,
+//     calculateAge: function () {
+//         console.log(`Hi Iam Vishnu ${this.age} years old`); //!here used this
+//     }
+// };
+// user.calculateAge();
+
+
+// *Traversing Object Entries
+
 const user = {
     name: 'Vishnu',
     age: 30,
-    isMarried: true,
-    friends: ['raja', 'ram',],
-    selectColor: null,
-    calculateAge: function () {
-        console.log(`Hi Iam Vishnu ${this.age} years old`);
-    }
-};
-user.calculateAge();
+    gender: 'Male',
+    phone: 9895087107,
+    email: 'vishnu@gmail.com'
+}
+
+// * 1st Way
+for (let key in user) {
+    console.log(key, user[key]);
+}
+
+// *2nd Way
+console.log(Object.keys(user));
+console.log(Object.values(user));
+
+// *3rd
+for (let val of Object.values(user)) {
+    console.log(val);
+}
