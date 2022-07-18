@@ -59,3 +59,13 @@
 
 
 
+<h4 align="left">Javascript Functions</h4>
+
+-  Function Basics
+-  Default Parameters
+-  Function as an Expression
+-  Arrow Functions
+-  Rest Parameter
+
+
+
