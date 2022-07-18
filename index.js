@@ -579,3 +579,28 @@ console.log(user);
 console.log(user.name);
 console.log(user['name']);
 console.log(user['age']);
+
+
+
+// ****Adding, Modifying Deleting Properties
+const user1 = {
+    name: 'Vishnu',
+    age: 40,
+    isMarried: true,
+}
+
+// !ADD
+
+user1.email = 'vishnu@gmail.com';
+user1['phone'] = '+919895087107';
+user1['1 page x'] = '123'; //!only possible this way
+console.log(user1);
+
+// !UPDATE
+user1.isMarried = false;
+user1.age = user1.age - 10;
+console.log(user1);
+
+// !DELETE
+delete user1.age;
+console.log(user1);
