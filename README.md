@@ -46,4 +46,16 @@
 -  String Immutability
 
 
+<h4 align="left">Objects in Java Script</h4>
+
+-  Objects Basics
+-  Adding, Modifying Deleting Properties
+-  Object Methods This Keyword
+-  Traversing Object Entries
+-  Object Destructuring
+-  Cloning an object
+-  Math Object
+-  JSON Data Format
+
+
 
