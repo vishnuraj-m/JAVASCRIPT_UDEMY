@@ -681,20 +681,45 @@
 
 // *Object Destructuring
 
+// const user = {
+//     name: 'vishnu',
+//     age: 30,
+//     favBook: {
+//         bookName: 'Abcdefg',
+//         author: 'xyz',
+//     },
+// };
+
+// const { name, age, favBook } = user  //!!!!!!!  Object Destructuring
+// const { bookName, author } = favBook  //!!!!!!!  Object Destructuring
+
+// console.log(user.name); //* normal
+// console.log(name); //* after object destructuring
+// console.log(age);
+// console.log(favBook.bookName);
+// console.log(favBook.author);
+
+// *Cloning an object
+
 const user = {
-    name: 'vishnu',
-    age: 30,
-    favBook: {
-        bookName: 'Abcdefg',
-        author: 'xyz',
-    },
-};
+    name: 'Vishnu',
+    age: 30
+}
 
-const { name, age, favBook } = user  //!!!!!!!  Object Destructuring
-const { bookName, author } = favBook  //!!!!!!!  Object Destructuring
+//! * 1st method
 
-console.log(user.name); //* normal  
-console.log(name); //* after object destructuring
-console.log(age);
-console.log(favBook.bookName);
-console.log(favBook.author);
+// const copiedUser = {};
+// copiedUser.name = user.name;
+// copiedUser.age = user.age;
+
+//! *2nd method
+
+// for (let key in user) {
+//     console.log(key, user[key]);
+//     copiedUser[key] = user[key]
+// }
+
+//! *3rd method OBJECT ASSIGN METHOD
+const copiedUser = Object.assign({}, user);
+
+console.log(copiedUser);
