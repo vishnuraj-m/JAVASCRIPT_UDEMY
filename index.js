@@ -795,9 +795,27 @@
 
 // * Function as an Expression
 
-const calSum = function (number1, number2, number3 = 50) {
-    let sum = number1 + number2 + number3;
-    //     return sum;
+// const calSum = function (number1, number2, number3 = 50) {
+//     let sum = number1 + number2 + number3;
+//     //     return sum;
+// }
+
+// console.log(calSum(10, 20));   //! only declare below
+
+
+// * Arrow Functions
+const calSumArrow = (number1, number2) => number1 + number2;
+console.log(calSumArrow(10, 20));
+
+// !Fun Expression multiplication
+const mulByTwo = function (num1) {
+    return num1 * 2;
 }
 
-console.log(calSum(10, 20));   //! only declare below
+console.log(mulByTwo(6));
+
+
+// !arrow multiplication
+
+const mulByArrow = (number1) => number1 * 2;
+console.log(mulByArrow(3));
