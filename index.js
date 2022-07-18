@@ -701,10 +701,10 @@
 
 // *Cloning an object
 
-const user = {
-    name: 'Vishnu',
-    age: 30
-}
+// const user = {
+//     name: 'Vishnu',
+//     age: 30
+// }
 
 //! * 1st method
 
@@ -720,12 +720,29 @@ const user = {
 // }
 
 //! *3rd method OBJECT ASSIGN METHOD
-const copiedUser = Object.assign({}, user);
+// const copiedUser = Object.assign({}, user);
 
-console.log(copiedUser);
+// console.log(copiedUser);
 
 // * Math Object
 
-console.log(Math.PI);
-console.log(Math.random());
-console.log(Math.round(3.7))
+// console.log(Math.PI);
+// console.log(Math.random());
+// console.log(Math.round(3.7));
+
+
+// *JSON Data Format
+
+const user = {
+    name: 'Vishnu',
+    age: 30,
+};
+
+// ! obj to json
+const jsonData = JSON.stringify(user)
+
+// console.log(user);
+console.log(jsonData);
+
+// ! json to obj
+console.log(JSON.parse(jsonData));
