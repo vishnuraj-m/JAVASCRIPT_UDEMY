@@ -785,8 +785,19 @@
 
 // *Default Parameters
 
-function calSum(number1, number2, number3 = 50) {
+// function calSum(number1, number2, number3 = 50) {
+//     let sum = number1 + number2 + number3;
+//     return sum;
+// }
+// console.log(calSum(10, 20));
+
+
+
+// * Function as an Expression
+
+const calSum = function (number1, number2, number3 = 50) {
     let sum = number1 + number2 + number3;
-    return sum;
+    //     return sum;
 }
-console.log(calSum(10, 20));
+
+console.log(calSum(10, 20));   //! only declare below
