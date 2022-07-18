@@ -733,16 +733,51 @@
 
 // *JSON Data Format
 
-const user = {
-    name: 'Vishnu',
-    age: 30,
-};
+// const user = {
+//     name: 'Vishnu',
+//     age: 30,
+// };
 
 // ! obj to json
-const jsonData = JSON.stringify(user)
+// const jsonData = JSON.stringify(user)
 
 // console.log(user);
-console.log(jsonData);
+// console.log(jsonData);
 
 // ! json to obj
-console.log(JSON.parse(jsonData));
+// console.log(JSON.parse(jsonData));
+
+// * ------ Javascript Functions
+
+// * Function Basics
+
+// ! Function Declaration
+
+function aboutMe(name, age) {
+    const message = `Hi it's me ${name} ${age} years old`
+    console.log(message);
+}
+
+//! Function Call
+aboutMe('Vishnu', 30);
+aboutMe('Ram', 26);
+
+
+// *** CALCULATE SUM
+
+function calSum(num1, num2) {
+    console.log(num1 + num2)
+
+}
+calSum(10, 10);
+
+
+let number1 = 20;
+let number2 = 30;
+
+function calcSum(number1, number2) {
+    let sum = number1 + number2;
+    return sum
+}
+let result = calcSum(10, 20)
+console.log(result);
