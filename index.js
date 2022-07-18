@@ -622,24 +622,57 @@
 
 // *Traversing Object Entries
 
-const user = {
-    name: 'Vishnu',
-    age: 30,
-    gender: 'Male',
-    phone: 9895087107,
-    email: 'vishnu@gmail.com'
+// const user = {
+//     name: 'Vishnu',
+//     age: 30,
+//     gender: 'Male',
+//     phone: 9895087107,
+//     email: 'vishnu@gmail.com'
+// }
+
+//! * 1st method
+// for (let key in user) {
+//     console.log(key, user[key]);
+// }
+
+//! *2nd method
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+
+//! *3rd method
+// for (let val of Object.values(user)) {
+//     console.log(val);
+// }
+
+
+// *  Exercise Total Salary
+
+const salaries = {
+    vishnu: 2000,
+    raj: 4000,
+    ram: 5000,
+    krishna: 6000,
+    shiv: 8000
 }
 
-// * 1st Way
-for (let key in user) {
-    console.log(key, user[key]);
-}
 
-// *2nd Way
-console.log(Object.keys(user));
-console.log(Object.values(user));
+//! * 1st method
 
-// *3rd
-for (let val of Object.values(user)) {
-    console.log(val);
+let sum = 0;
+for (let key in salaries) {
+    console.log(key, salaries[key]);
+    //! sum = sum + salaries[key];
+    sum += salaries[key];
 }
+console.log(sum);
+
+//! *2nd method
+console.log(Object.keys(salaries));
+console.log(Object.values(salaries));
+
+//! *3rd method
+
+for (let val of Object.values(salaries)) {
+    sum += val;
+}
+console.log(sum);
