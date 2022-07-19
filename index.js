@@ -823,7 +823,6 @@
 
 
 // *Rest Parameter
-
 // function multiply(...args) {
 
 //     let mul = 1;
@@ -837,17 +836,20 @@
 // console.log(multiply(2, 2, 2, 2, 2));
 
 
+
+
 // ! ---------Javascript Arrays
 
 // * Array Basics
 
 // let friends = ['vishnu', 'ram', 'raja', 'shiva', 'devi'];
 
-// console.log(friends);
-// console.log(friends[2]);
-// console.log(friends[3]);
-// console.log(friends[0]);
-// console.log(friends.length);
+//console.log(friends);
+//console.log(friends[2]);
+//console.log(friends[3]);
+//console.log(friends[0]);
+//console.log(friends.length);
+
 
 
 // * Adding Elements
@@ -862,3 +864,8 @@ console.log(numbers)
 
 numbers.splice(3, 0, 1, 1, 2, 2);
 console.log(numbers);
+
+
+
+
+
