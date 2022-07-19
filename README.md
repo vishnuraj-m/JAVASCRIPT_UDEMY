@@ -58,7 +58,6 @@
 -  JSON Data Format
 
 
-
 <h4 align="left">Javascript Functions</h4>
 
 -  Function Basics
@@ -66,7 +65,6 @@
 -  Function as an Expression
 -  Arrow Functions
 -  Rest Parameter
--  
 
 <h4 align="left">Javascript Arrays</h4>
 
