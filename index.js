@@ -804,18 +804,34 @@
 
 
 // * Arrow Functions
-const calSumArrow = (number1, number2) => number1 + number2;
-console.log(calSumArrow(10, 20));
+// const calSumArrow = (number1, number2) => number1 + number2;
+// console.log(calSumArrow(10, 20));
 
 // !Fun Expression multiplication
-const mulByTwo = function (num1) {
-    return num1 * 2;
-}
+// const mulByTwo = function (num1) {
+//     return num1 * 2;
+// }
 
-console.log(mulByTwo(6));
+// console.log(mulByTwo(6));
 
 
 // !arrow multiplication
 
-const mulByArrow = (number1) => number1 * 2;
-console.log(mulByArrow(3));
+// const mulByArrow = (number1) => number1 * 2;
+// console.log(mulByArrow(3));
+
+
+
+// *Rest Parameter
+
+function multiply(...args) {
+
+    let mul = 1;
+    for (let num of args) {
+        mul = mul * num
+    }
+    return mul;
+
+}
+
+console.log(multiply(2, 2, 2, 2, 2))
