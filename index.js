@@ -932,39 +932,58 @@
 
 //  * Sorting and Reversing an array
 
-const numbers = [2, 6, 5, 8, 9, 7, 4, 1, 3];
+// const numbers = [2, 6, 5, 8, 9, 7, 4, 1, 3];
 
-numbers.sort();
-console.log(numbers);
-numbers.reverse();
-console.log(numbers);
+// numbers.sort();
+// console.log(numbers);
+// numbers.reverse();
+// console.log(numbers);
 
 
 // !------------------------
 
-let students = [
-    { name: 'Vishnu', age: 60 },
-    { name: 'Ram', age: 20 },
-    { name: 'Shiv', age: 40 },
-];
+// let students = [
+//     { name: 'Vishnu', age: 60 },
+//     { name: 'Ram', age: 20 },
+//     { name: 'Shiv', age: 40 },
+// ];
 
-students.sort(function (d1, d2) {
-    if (d1.age > d2.age) return +1;
-    if (d1.age === d2.age) return 0;
-    if (d1.age < d2.age) return -1;
+// students.sort(function (d1, d2) {
+//     if (d1.age > d2.age) return +1;
+//     if (d1.age === d2.age) return 0;
+//     if (d1.age < d2.age) return -1;
+// });
+// console.log(students);
+
+// !------------------------
+
+// let doctors = [
+//     { name: 'Vishnu', age: 40 },
+//     { name: 'Ram', age: 20 },
+//     { name: 'Shiv', age: 60 },
+// ];
+// doctors.sort(function (d1, d2) {
+//     if (d1.age > d2.age) return +1;
+//     if (d1.age === d2.age) return 0;
+//     if (d1.age < d2.age) return -1;
+// }).reverse();
+// console.log(doctors);
+
+//  * Testing the elements of the array every , some
+
+//  !!!!!! every
+
+const numbers = [3, 5, 6, 7, 8, -1, 9, 5];
+const data = numbers.every(function (num) {
+    return num > 0;
 });
-console.log(students);
 
-// !------------------------
+console.log(data);
 
-let doctors = [
-    { name: 'Vishnu', age: 40 },
-    { name: 'Ram', age: 20 },
-    { name: 'Shiv', age: 60 },
-];
-doctors.sort(function (d1, d2) {
-    if (d1.age > d2.age) return +1;
-    if (d1.age === d2.age) return 0;
-    if (d1.age < d2.age) return -1;
-}).reverse();
-console.log(doctors);
+
+//  !!!!!! some
+
+const data1 = numbers.some(function (num) {
+    return num > 0;
+});
+console.log(data1);
