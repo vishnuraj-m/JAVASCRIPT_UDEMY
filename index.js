@@ -932,39 +932,74 @@
 
 //  * Sorting and Reversing an array
 
-const numbers = [2, 6, 5, 8, 9, 7, 4, 1, 3];
+// const numbers = [2, 6, 5, 8, 9, 7, 4, 1, 3];
 
-numbers.sort();
-console.log(numbers);
-numbers.reverse();
-console.log(numbers);
+// numbers.sort();
+// console.log(numbers);
+// numbers.reverse();
+// console.log(numbers);
 
-
-// !------------------------
-
-let students = [
-    { name: 'Vishnu', age: 60 },
-    { name: 'Ram', age: 20 },
-    { name: 'Shiv', age: 40 },
-];
-
-students.sort(function (d1, d2) {
-    if (d1.age > d2.age) return +1;
-    if (d1.age === d2.age) return 0;
-    if (d1.age < d2.age) return -1;
-});
-console.log(students);
 
 // !------------------------
 
-let doctors = [
-    { name: 'Vishnu', age: 40 },
-    { name: 'Ram', age: 20 },
-    { name: 'Shiv', age: 60 },
-];
-doctors.sort(function (d1, d2) {
-    if (d1.age > d2.age) return +1;
-    if (d1.age === d2.age) return 0;
-    if (d1.age < d2.age) return -1;
-}).reverse();
-console.log(doctors);
+// let students = [
+//     { name: 'Vishnu', age: 60 },
+//     { name: 'Ram', age: 20 },
+//     { name: 'Shiv', age: 40 },
+// ];
+
+// students.sort(function (d1, d2) {
+//     if (d1.age > d2.age) return +1;
+//     if (d1.age === d2.age) return 0;
+//     if (d1.age < d2.age) return -1;
+// });
+// console.log(students);
+
+// !------------------------
+
+// let doctors = [
+//     { name: 'Vishnu', age: 40 },
+//     { name: 'Ram', age: 20 },
+//     { name: 'Shiv', age: 60 },
+// ];
+// doctors.sort(function (d1, d2) {
+//     if (d1.age > d2.age) return +1;
+//     if (d1.age === d2.age) return 0;
+//     if (d1.age < d2.age) return -1;
+// }).reverse();
+// console.log(doctors);
+
+//  * Testing the elements of the array every , some
+
+//  !!!!!! every
+
+// const numbers = [3, 5, 6, 7, 8, -1, 9, 5];
+// const data = numbers.every(function (num) {
+//     return num > 0;
+// });
+
+// console.log(data);
+
+
+//  !!!!!! some
+
+// const data1 = numbers.some(function (num) {
+//     return num > 0;
+// });
+// console.log(data1);
+
+
+// * Combining and Slicing the array
+
+// ! concat
+
+const num1 = [1, 2, 3];
+const num2 = [4, 5, 6, 7, 8, 9];
+const num = num1.concat(num2);
+console.log(num);
+
+// ! slice
+
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sliceArray = number.slice(3, 8);
+console.log(sliceArray);
