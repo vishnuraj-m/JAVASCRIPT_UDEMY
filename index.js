@@ -993,13 +993,33 @@
 
 // ! concat
 
-const num1 = [1, 2, 3];
-const num2 = [4, 5, 6, 7, 8, 9];
-const num = num1.concat(num2);
-console.log(num);
+// const num1 = [1, 2, 3];
+// const num2 = [4, 5, 6, 7, 8, 9];
+// const num = num1.concat(num2);
+// console.log(num);
 
 // ! slice
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const sliceArray = number.slice(3, 8);
-console.log(sliceArray);
+// const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const sliceArray = number.slice(3, 8);
+// console.log(sliceArray);
+
+
+//  * Spread Operators
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+console.log(...numbers);
+console.log(numbers);
+console.log(numbers[0], numbers[1],);
+
+const copiedArray = [...numbers];
+console.log(copiedArray);
+
+
+const num1 = [1, 2, 3];
+const num2 = [4, 5, 6];
+
+num = [...num1, ...num2]
+console.log(num);
