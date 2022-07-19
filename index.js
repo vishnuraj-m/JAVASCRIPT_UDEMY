@@ -973,17 +973,33 @@
 
 //  !!!!!! every
 
-const numbers = [3, 5, 6, 7, 8, -1, 9, 5];
-const data = numbers.every(function (num) {
-    return num > 0;
-});
+// const numbers = [3, 5, 6, 7, 8, -1, 9, 5];
+// const data = numbers.every(function (num) {
+//     return num > 0;
+// });
 
-console.log(data);
+// console.log(data);
 
 
 //  !!!!!! some
 
-const data1 = numbers.some(function (num) {
-    return num > 0;
-});
-console.log(data1);
+// const data1 = numbers.some(function (num) {
+//     return num > 0;
+// });
+// console.log(data1);
+
+
+// * Combining and Slicing the array
+
+// ! concat
+
+const num1 = [1, 2, 3];
+const num2 = [4, 5, 6, 7, 8, 9];
+const num = num1.concat(num2);
+console.log(num);
+
+// ! slice
+
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sliceArray = number.slice(3, 8);
+console.log(sliceArray);
