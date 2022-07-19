@@ -867,20 +867,45 @@
 
 // * Removing Elements in an array
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-console.log(numbers);
+// console.log(numbers);
 
-numbers.shift(); //!remove first
-console.log(numbers);
+// numbers.shift(); //!remove first
+// console.log(numbers);
 
-numbers.pop(); //!remove last
-console.log(numbers);
+// numbers.pop(); //!remove last
+// console.log(numbers);
 
-numbers.splice(2, 3); //!remove in between
-console.log(numbers);
-
-
+// numbers.splice(2, 3); //!remove in between
+// console.log(numbers);
 
 
+// *Finding Elements (Primitive Type)
+
+// const numbers = [1, 2, 3, 2, 5, 6, 2, 8];
+
+
+// console.log(numbers.includes(6));
+// console.log(numbers.includes(6, 5));
+// console.log(numbers.includes(3, 3));
+// console.log(numbers.indexOf(5));
+// console.log(numbers.lastIndexOf(6));
+// console.log(numbers);
+
+
+// * Finding Elements (Reference Type)
+
+const doctors = [
+    { name: "vishnu", age: 20, },
+    { name: "ram", age: 30, },
+    { name: "shiv", age: 40, },
+];
+
+const result = doctors.find(function (doctor) {
+    return doctor.name === 'ram';
+    // return doctor.age > 30;
+})
+
+console.log(result);
 
