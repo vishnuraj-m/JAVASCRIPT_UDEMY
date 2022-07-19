@@ -852,17 +852,32 @@
 
 
 
-// * Adding Elements
+// * Adding Elements in an array
 
-const numbers = [12, 13, 14, 15, 16]
+// const numbers = [12, 13, 14, 15, 16]
+// console.log(numbers);
+// numbers.unshift(9, 10, 11); //! add before
+// console.log(numbers);
+
+// numbers.push(17, 18, 19); //! add after
+// console.log(numbers)
+
+// numbers.splice(3, 0, 1, 1, 2, 2); //!add in between
+// console.log(numbers);
+
+// * Removing Elements in an array
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 console.log(numbers);
-numbers.unshift(9, 10, 11); //! add before
+
+numbers.shift(); //!remove first
 console.log(numbers);
 
-numbers.push(17, 18, 19); //! add after
-console.log(numbers)
+numbers.pop(); //!remove last
+console.log(numbers);
 
-numbers.splice(3, 0, 1, 1, 2, 2);
+numbers.splice(2, 3); //!remove in between
 console.log(numbers);
 
 
