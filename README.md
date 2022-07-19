@@ -69,7 +69,7 @@
 <h4 align="left">Javascript Arrays</h4>
 
 -  Array Basics
--  Adding Elements (== unShift push ==)
+-  Adding Elements ( unShift push splice)
 -  Removing Elements
 -  Finding Elements (Primitive Type)
 -  Finding Elements (Reference Type)
