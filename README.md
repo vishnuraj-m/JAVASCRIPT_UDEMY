@@ -70,8 +70,8 @@
 
 -  Array Basics
 -  Adding Elements ( unShift push splice)
--  Removing Elements
--  Finding Elements (Primitive Type)
+-  Removing Elements ===> ( shift pop splice)
+-  Finding Elements ===> (Primitive Type)
 -  Finding Elements (Reference Type)
 -  Iterating an array
 -  Sorting and Reversing an array
