@@ -859,3 +859,6 @@ console.log(numbers);
 
 numbers.push(17, 18, 19); //! add after
 console.log(numbers)
+
+numbers.splice(3, 0, 1, 1, 2, 2);
+console.log(numbers);
