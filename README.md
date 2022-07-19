@@ -66,6 +66,25 @@
 -  Function as an Expression
 -  Arrow Functions
 -  Rest Parameter
+-  
+
+<h4 align="left">Javascript Arrays</h4>
+
+-  Array Basics
+-  Adding Elements
+-  Removing Elements
+-  Finding Elements (Primitive Type)
+-  Finding Elements (Reference Type)
+-  Iterating an array
+-  Sorting and Reversing an array
+-  Testing the elements of the array
+-  Combining and Slicing the array
+-  Spread Operators
+-  Joining Array
+-  Mapping an array
+-  Filtering an array
+-  Reducing an array
+
 
 
 
