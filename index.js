@@ -846,4 +846,5 @@ let friends = ['vishnu', 'ram', 'raja', 'shiva', 'devi'];
 console.log(friends);
 console.log(friends[2]);
 console.log(friends[3]);
+console.log(friends[0]);
 console.log(friends.length);
