@@ -74,9 +74,9 @@
 -  Finding Elements (Primitive Type)
 -  Finding Elements (Reference Type)
 -  Iterating an array
--  Sorting and Reversing an array
--  Testing the elements of the array
--  Combining and Slicing the array
+-  Sorting and Reversing an array ===> ( sort reverse )
+-  Testing the elements of the array ===> ( every some )
+-  Combining and Slicing the array ===> ( concat slice )
 -  Spread Operators
 -  Joining Array
 -  Mapping an array
