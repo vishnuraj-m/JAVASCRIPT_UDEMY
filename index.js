@@ -896,16 +896,36 @@
 
 // * Finding Elements (Reference Type)
 
-const doctors = [
-    { name: "vishnu", age: 20, },
-    { name: "ram", age: 30, },
-    { name: "shiv", age: 40, },
-];
+// const doctors = [
+//     { name: "vishnu", age: 20, },
+//     { name: "ram", age: 30, },
+//     { name: "shiv", age: 40, },
+// ];
 
-const result = doctors.find(function (doctor) {
-    return doctor.name === 'ram';
-    // return doctor.age > 30;
+// const result = doctors.find(function (doctor) {
+//     return doctor.name === 'ram';
+//     // return doctor.age > 30;
+// })
+
+// console.log(result);
+
+// * Iterating an array
+
+const numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers.length; i++) {
+    console.log(i, numbers[i])
+}
+
+
+// ! for of
+for (let num of numbers) {
+    console.log(num)
+}
+
+
+// ! for each
+
+numbers.forEach(function (num, index) {
+    console.log(index, num);
 })
-
-console.log(result);
-
