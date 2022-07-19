@@ -841,10 +841,21 @@
 
 // * Array Basics
 
-let friends = ['vishnu', 'ram', 'raja', 'shiva', 'devi'];
+// let friends = ['vishnu', 'ram', 'raja', 'shiva', 'devi'];
 
-console.log(friends);
-console.log(friends[2]);
-console.log(friends[3]);
-console.log(friends[0]);
-console.log(friends.length);
+// console.log(friends);
+// console.log(friends[2]);
+// console.log(friends[3]);
+// console.log(friends[0]);
+// console.log(friends.length);
+
+
+// * Adding Elements
+
+const numbers = [12, 13, 14, 15, 16]
+console.log(numbers);
+numbers.unshift(9, 10, 11); //! add before
+console.log(numbers);
+
+numbers.push(17, 18, 19); //! add after
+console.log(numbers)
