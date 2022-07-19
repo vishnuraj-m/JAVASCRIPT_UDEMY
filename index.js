@@ -911,21 +911,60 @@
 
 // * Iterating an array
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-for (let i = 0; i < numbers.length; i++) {
-    console.log(i, numbers[i])
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(i, numbers[i])
+// }
 
 
 // ! for of
-for (let num of numbers) {
-    console.log(num)
-}
+// for (let num of numbers) {
+//     console.log(num)
+// }
 
 
 // ! for each
 
-numbers.forEach(function (num, index) {
-    console.log(index, num);
-})
+// numbers.forEach(function (num, index) {
+//     console.log(index, num);
+// })
+
+//  * Sorting and Reversing an array
+
+const numbers = [2, 6, 5, 8, 9, 7, 4, 1, 3];
+
+numbers.sort();
+console.log(numbers);
+numbers.reverse();
+console.log(numbers);
+
+
+// !------------------------
+
+let students = [
+    { name: 'Vishnu', age: 60 },
+    { name: 'Ram', age: 20 },
+    { name: 'Shiv', age: 40 },
+];
+
+students.sort(function (d1, d2) {
+    if (d1.age > d2.age) return +1;
+    if (d1.age === d2.age) return 0;
+    if (d1.age < d2.age) return -1;
+});
+console.log(students);
+
+// !------------------------
+
+let doctors = [
+    { name: 'Vishnu', age: 40 },
+    { name: 'Ram', age: 20 },
+    { name: 'Shiv', age: 60 },
+];
+doctors.sort(function (d1, d2) {
+    if (d1.age > d2.age) return +1;
+    if (d1.age === d2.age) return 0;
+    if (d1.age < d2.age) return -1;
+}).reverse();
+console.log(doctors);
