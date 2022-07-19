@@ -824,14 +824,26 @@
 
 // *Rest Parameter
 
-function multiply(...args) {
+// function multiply(...args) {
 
-    let mul = 1;
-    for (let num of args) {
-        mul = mul * num
-    }
-    return mul;
+//     let mul = 1;
+//     for (let num of args) {
+//         mul = mul * num
+//     }
+//     return mul;
 
-}
+// }
 
-console.log(multiply(2, 2, 2, 2, 2))
+// console.log(multiply(2, 2, 2, 2, 2));
+
+
+// ! ---------Javascript Arrays
+
+// * Array Basics
+
+let friends = ['vishnu', 'ram', 'raja', 'shiva', 'devi'];
+
+console.log(friends);
+console.log(friends[2]);
+console.log(friends[3]);
+console.log(friends.length);
