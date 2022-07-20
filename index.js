@@ -1235,37 +1235,44 @@
 
 // !  Weak Set
 
-const ws = new WeakSet();
+// const ws = new WeakSet();
 
-const object1 = {};
-const object2 = {};
+// const object1 = {};
+// const object2 = {};
 
-ws.add(object1);
-ws.add(object2);
+// ws.add(object1);
+// ws.add(object2);
 
-console.log(ws);
+// console.log(ws);
 
 
 // ! find
-console.log(ws.has(object1));
-console.log(ws.has(object2));
+// console.log(ws.has(object1));
+// console.log(ws.has(object2));
 // ! Delete
 
-ws.delete(object1);
-console.log(ws.has(object1));
+// ws.delete(object1);
+// console.log(ws.has(object1));
 
 // ! Weak Map
 
-const wm = new WeakMap();
+// const wm = new WeakMap();
 
-wm.set(object1, 123456789);
-console.log(wm.has(object1));
+// wm.set(object1, 123456789);
+// console.log(wm.has(object1));
 
 // ! show vales
 
-console.log(wm.get(object1));
+// console.log(wm.get(object1));
 
 // ! Delete
 
-wm.delete(object1);
-console.log(wm.has(object1));
+// wm.delete(object1);
+// console.log(wm.has(object1));
+
+
+// * Module (Import Export)
+
+import addNumber from './main.js'
+
+console.log(addNumber(10, 20));
