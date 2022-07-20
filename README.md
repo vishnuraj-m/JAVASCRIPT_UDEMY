@@ -83,6 +83,15 @@
 -  Filtering an array
 -  Reducing an array
 
+<h4 align="left">ES6, ES7 and ES8 Features/h4>
+
+-  Array Object Destructuring
+-  Data Structure: Set
+-  Data Structure: Map
+-  Weak Set + Weak Map
+-  Module (Import Export)
+-  padStart, padEnd TrimStart, TrimEnd  
+  
 
 
 
