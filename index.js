@@ -1133,27 +1133,60 @@
 
 // * Array Object Destructuring
 
-function greeting(user) {
+// function greeting(user) {
 
-    // ! Object destructuring
-    const { name, age, address } = user;
-    const { long, lat } = address;
+// ! Object destructuring
+//     const { name, age, address } = user;
+//     const { long, lat } = address;
 
-    console.log(`Hello ${name} and age is ${age} and address is ${long},${lat} `)
-};
+//     console.log(`Hello ${name} and age is ${age} and address is ${long},${lat} `)
+// };
 
-const user = {
-    name: 'vishnu',
-    age: 30,
-    address: {
-        long: 334.256,
-        lat: 258.654
-    }
-};
+// const user = {
+//     name: 'vishnu',
+//     age: 30,
+//     address: {
+//         long: 334.256,
+//         lat: 258.654
+//     }
+// };
 
-greeting(user);
+// greeting(user);
 
 // ! array destructuring
 
-let [a, b, c, d, e] = [1, 2, 3, 4, 5];
-console.log(a, b, c, d, e)
+// let [a, b, c, d, e] = [1, 2, 3, 4, 5];
+// console.log(a, b, c, d, e)
+
+
+// * Data Structure: Set
+
+let set = new Set();
+
+set.add(100);
+set.add(300);
+set.add(200);
+set.add(100);
+
+console.log(set);
+console.log(set.size);
+
+// ! remove
+set.delete(200);
+console.log(set);
+console.log(set.size);
+
+// ! for of
+
+for (let val of set) {
+    console.log(val);
+};
+
+// ! for each
+
+set.forEach((val) => console.log(`for each\n`, val));
+
+// ! clear
+
+set.clear();
+console.log(set);
