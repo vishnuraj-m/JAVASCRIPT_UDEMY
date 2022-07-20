@@ -1041,7 +1041,9 @@
 
 // * Mapping an array
 
-let numbers = [1, 2, 3, 4, 5, 6];
+// let numbers = [1, 2, 3, 4, 5, 6];
+
+
 // let mulByTwo = [];
 // for (let num of numbers) {
 //     mulByTwo.push(num * 2);
@@ -1050,21 +1052,49 @@ let numbers = [1, 2, 3, 4, 5, 6];
 
 // !  MAP===================>
 
-const multiplyByTwo = numbers.map(function (num) {
-    return num * 2;
-});
-console.log(multiplyByTwo);
+// const multiplyByTwo = numbers.map(function (num) {
+//     return num * 2;
+// });
+// console.log(multiplyByTwo);
 
-const mulByTwo = numbers.map((num) => num * 2);
-console.log(mulByTwo);
+// const mulByTwo = numbers.map((num) => num * 2);
+// console.log(mulByTwo);
 
 // ! ====..............
 
-let doctor = [
-    { name: 'vishnu', age: 25 },
-    { name: 'ram', age: 30 },
-    { name: 'shiva', age: 35 },
-];
+// let doctor = [
+//     { name: 'vishnu', age: 25 },
+//     { name: 'ram', age: 30 },
+//     { name: 'shiva', age: 35 },
+// ];
 
-const docName = doctor.map((doc) => doc.name);
-console.log(docName);
+// const docName = doctor.map((doc) => doc.name);
+// console.log(docName);
+
+
+// * Filtering an array
+
+// ! normal way 
+let numbers = [1, 2, 3, 4, 5, 6];
+let onlyOddNumbers = [];
+
+for (let num of numbers) {
+    if (num % 2 === 1) {
+        onlyOddNumbers.push(num);
+    }
+}
+
+console.log(onlyOddNumbers);
+
+// ! filter
+
+const onlyOddNumbers1 = numbers.filter(function (num) {
+    return num % 2 === 1;
+});
+
+console.log(onlyOddNumbers1);
+
+// ! Filter arrow function
+
+const onlyEvenNumbers = numbers.filter((num) => num % 2 === 0);
+console.log(onlyEvenNumbers)
