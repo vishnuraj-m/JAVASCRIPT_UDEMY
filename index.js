@@ -1273,6 +1273,52 @@
 
 // * Module (Import Export)
 
-import addNumber from './main.js'
+// import addNumber from './main.js'
 
-console.log(addNumber(10, 20));
+// console.log(addNumber(10, 20));
+
+
+
+//  * padStart, padEnd TrimStart, TrimEnd
+
+// ! padStart ===> 0004
+
+let minute = '4';
+let hour = '8'
+
+console.log(minute.padStart(4));
+console.log(minute.padStart(4, 0));
+
+// ! padEnd ===> 4000
+
+console.log(hour.padEnd(5, 0));
+console.log(hour.padEnd(5));
+
+
+// ! Trim ===> remove all empty places
+let trimName0 = '   vishnu   ';
+
+console.log(trimName0.length);
+
+trimName0 = trimName0.trim();
+console.log(trimName0);
+console.log(trimName0.length);
+
+// ! TrimStart ===> remove left side empty places
+
+let trimName = '   vishnu   ';
+
+console.log(trimName.length);
+
+trimName = trimName.trimStart();
+console.log(trimName);
+console.log(trimName.length);
+
+// ! TrimEnd ===> remove right side empty places
+
+let trimName1 = '   vishnu   ';
+console.log(trimName1.length);
+
+trimName1 = trimName1.trimEnd();
+console.log(trimName1);
+console.log(trimName1.length);
