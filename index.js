@@ -1028,13 +1028,43 @@
 
 // ! Array to String
 
-let numbers = [1, 2, 3, 4, 5, 6];
-let joinArray = numbers.join('|')
-console.log(joinArray);
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let joinArray = numbers.join('|')
+// console.log(joinArray);
 
 // ! String to Array
 
-let message = 'Hi my name is vishnu';
-const arrayMessage = message.split(' ');
-console.log(arrayMessage);
-console.log(arrayMessage.join('-'));
+// let message = 'Hi my name is vishnu';
+// const arrayMessage = message.split(' ');
+// console.log(arrayMessage);
+// console.log(arrayMessage.join('-'));
+
+// * Mapping an array
+
+let numbers = [1, 2, 3, 4, 5, 6];
+// let mulByTwo = [];
+// for (let num of numbers) {
+//     mulByTwo.push(num * 2);
+// };
+// console.log(mulByTwo)
+
+// !  MAP===================>
+
+const multiplyByTwo = numbers.map(function (num) {
+    return num * 2;
+});
+console.log(multiplyByTwo);
+
+const mulByTwo = numbers.map((num) => num * 2);
+console.log(mulByTwo);
+
+// ! ====..............
+
+let doctor = [
+    { name: 'vishnu', age: 25 },
+    { name: 'ram', age: 30 },
+    { name: 'shiva', age: 35 },
+];
+
+const docName = doctor.map((doc) => doc.name);
+console.log(docName);
