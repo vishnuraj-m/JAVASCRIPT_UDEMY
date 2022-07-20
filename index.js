@@ -1074,27 +1074,54 @@
 
 // * Filtering an array
 
-// ! normal way 
-let numbers = [1, 2, 3, 4, 5, 6];
-let onlyOddNumbers = [];
+// ! normal way
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let onlyOddNumbers = [];
 
-for (let num of numbers) {
-    if (num % 2 === 1) {
-        onlyOddNumbers.push(num);
-    }
-}
+// for (let num of numbers) {
+//     if (num % 2 === 1) {
+//         onlyOddNumbers.push(num);
+//     }
+// }
 
-console.log(onlyOddNumbers);
+// console.log(onlyOddNumbers);
 
 // ! filter
 
-const onlyOddNumbers1 = numbers.filter(function (num) {
-    return num % 2 === 1;
-});
+// const onlyOddNumbers1 = numbers.filter(function (num) {
+//     return num % 2 === 1;
+// });
 
-console.log(onlyOddNumbers1);
+// console.log(onlyOddNumbers1);
 
 // ! Filter arrow function
 
-const onlyEvenNumbers = numbers.filter((num) => num % 2 === 0);
-console.log(onlyEvenNumbers)
+// const onlyEvenNumbers = numbers.filter((num) => num % 2 === 0);
+// console.log(onlyEvenNumbers)
+
+// *Reducing an array
+
+
+// ! normal way
+
+let numbers = [10, 20, 30];
+
+let sum = 0;
+for (let num of numbers) {
+    sum = sum + num;
+};
+console.log(sum);
+
+
+// ! Reduce
+
+const ReduceSum = numbers.reduce(function (sum, num) {
+    return sum = sum + num;
+}, 0);
+
+console.log(ReduceSum);
+
+// ! reduce arrow
+
+const reduceSum = numbers.reduce((sum, num) => sum = sum + num);
+console.log(reduceSum)
