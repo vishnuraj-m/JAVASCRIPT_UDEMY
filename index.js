@@ -1104,24 +1104,56 @@
 
 // ! normal way
 
-let numbers = [10, 20, 30];
+// let numbers = [10, 20, 30];
 
-let sum = 0;
-for (let num of numbers) {
-    sum = sum + num;
-};
-console.log(sum);
+// let sum = 0;
+// for (let num of numbers) {
+//     sum = sum + num;
+// };
+// console.log(sum);
 
 
 // ! Reduce
 
-const ReduceSum = numbers.reduce(function (sum, num) {
-    return sum = sum + num;
-}, 0);
+// const ReduceSum = numbers.reduce(function (sum, num) {
+//     return sum = sum + num;
+// }, 0);
 
-console.log(ReduceSum);
+// console.log(ReduceSum);
 
 // ! reduce arrow
 
-const reduceSum = numbers.reduce((sum, num) => sum = sum + num);
-console.log(reduceSum)
+// const reduceSum = numbers.reduce((sum, num) => sum = sum + num);
+// console.log(reduceSum)
+
+
+
+
+// !===================ES6, ES7 and ES8 Features==============
+
+// * Array Object Destructuring
+
+function greeting(user) {
+
+    // ! Object destructuring
+    const { name, age, address } = user;
+    const { long, lat } = address;
+
+    console.log(`Hello ${name} and age is ${age} and address is ${long},${lat} `)
+};
+
+const user = {
+    name: 'vishnu',
+    age: 30,
+    address: {
+        long: 334.256,
+        lat: 258.654
+    }
+};
+
+greeting(user);
+
+// ! array destructuring
+
+let [a, b, c, d, e] = [1, 2, 3, 4, 5];
+console.log(a, b, c, d, e)
