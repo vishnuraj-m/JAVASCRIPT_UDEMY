@@ -1194,38 +1194,78 @@
 
 // * Data Structure: Map
 
-let map = new Map();
+// let map = new Map();
 
-map.set('Mango', 'Aam');
-map.set('Banana', 'kel');
-map.set('Score', 100);
+// map.set('Mango', 'Aam');
+// map.set('Banana', 'kel');
+// map.set('Score', 100);
 
-console.log(map);
+// console.log(map);
 
 
 // ! for of
 
-for (let ele of map) {
-    console.log(ele);
-}
+// for (let ele of map) {
+//     console.log(ele);
+// }
 
 // ! search using  has
 
-console.log(map.has('Banana'));
-console.log(map.has('Bat'));
+// console.log(map.has('Banana'));
+// console.log(map.has('Bat'));
 
 
 // ! Delete
-map.delete('Banana');
-console.log(map);
+// map.delete('Banana');
+// console.log(map);
 
 
 // !key & vales
 
-console.log(map.values());
-console.log(map.keys());
+// console.log(map.values());
+// console.log(map.keys());
 
 // ! Clear
 
-map.clear();
-console.log(map);
+// map.clear();
+// console.log(map);
+
+
+// * Weak Set + Weak Map
+
+// !  Weak Set
+
+const ws = new WeakSet();
+
+const object1 = {};
+const object2 = {};
+
+ws.add(object1);
+ws.add(object2);
+
+console.log(ws);
+
+
+// ! find
+console.log(ws.has(object1));
+console.log(ws.has(object2));
+// ! Delete
+
+ws.delete(object1);
+console.log(ws.has(object1));
+
+// ! Weak Map
+
+const wm = new WeakMap();
+
+wm.set(object1, 123456789);
+console.log(wm.has(object1));
+
+// ! show vales
+
+console.log(wm.get(object1));
+
+// ! Delete
+
+wm.delete(object1);
+console.log(wm.has(object1));
