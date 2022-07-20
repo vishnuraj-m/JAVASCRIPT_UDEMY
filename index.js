@@ -1070,6 +1070,7 @@
 
 // const docName = doctor.map((doc) => doc.name);
 // console.log(docName);
+// console.log(typeof docName);
 
 
 // * Filtering an array
@@ -1161,32 +1162,70 @@
 
 // * Data Structure: Set
 
-let set = new Set();
+// let set = new Set();
 
-set.add(100);
-set.add(300);
-set.add(200);
-set.add(100);
+// set.add(100);
+// set.add(300);
+// set.add(200);
+// set.add(100);
 
-console.log(set);
-console.log(set.size);
+// console.log(set);
+// console.log(set.size);
 
 // ! remove
-set.delete(200);
-console.log(set);
-console.log(set.size);
+// set.delete(200);
+// console.log(set);
+// console.log(set.size);
 
 // ! for of
 
-for (let val of set) {
-    console.log(val);
-};
+// for (let val of set) {
+//     console.log(val);
+// };
 
 // ! for each
 
-set.forEach((val) => console.log(`for each\n`, val));
+// set.forEach((val) => console.log(`for each\n`, val));
 
 // ! clear
 
-set.clear();
-console.log(set);
+// set.clear();
+// console.log(set);
+
+// * Data Structure: Map
+
+let map = new Map();
+
+map.set('Mango', 'Aam');
+map.set('Banana', 'kel');
+map.set('Score', 100);
+
+console.log(map);
+
+
+// ! for of
+
+for (let ele of map) {
+    console.log(ele);
+}
+
+// ! search using  has
+
+console.log(map.has('Banana'));
+console.log(map.has('Bat'));
+
+
+// ! Delete
+map.delete('Banana');
+console.log(map);
+
+
+// !key & vales
+
+console.log(map.values());
+console.log(map.keys());
+
+// ! Clear
+
+map.clear();
+console.log(map);
