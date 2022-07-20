@@ -1007,19 +1007,64 @@
 
 //  * Spread Operators
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
-console.log(...numbers);
-console.log(numbers);
-console.log(numbers[0], numbers[1],);
+// console.log(...numbers);
+// console.log(numbers);
+// console.log(numbers[0], numbers[1],);
 
-const copiedArray = [...numbers];
-console.log(copiedArray);
+// const copiedArray = [...numbers];
+// console.log(copiedArray);
 
 
-const num1 = [1, 2, 3];
-const num2 = [4, 5, 6];
+// const num1 = [1, 2, 3];
+// const num2 = [4, 5, 6];
 
-num = [...num1, ...num2]
-console.log(num);
+// num = [...num1, ...num2]
+// console.log(num);
+
+// * Joining Array
+
+// ! Array to String
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// let joinArray = numbers.join('|')
+// console.log(joinArray);
+
+// ! String to Array
+
+// let message = 'Hi my name is vishnu';
+// const arrayMessage = message.split(' ');
+// console.log(arrayMessage);
+// console.log(arrayMessage.join('-'));
+
+// * Mapping an array
+
+let numbers = [1, 2, 3, 4, 5, 6];
+// let mulByTwo = [];
+// for (let num of numbers) {
+//     mulByTwo.push(num * 2);
+// };
+// console.log(mulByTwo)
+
+// !  MAP===================>
+
+const multiplyByTwo = numbers.map(function (num) {
+    return num * 2;
+});
+console.log(multiplyByTwo);
+
+const mulByTwo = numbers.map((num) => num * 2);
+console.log(mulByTwo);
+
+// ! ====..............
+
+let doctor = [
+    { name: 'vishnu', age: 25 },
+    { name: 'ram', age: 30 },
+    { name: 'shiva', age: 35 },
+];
+
+const docName = doctor.map((doc) => doc.name);
+console.log(docName);
