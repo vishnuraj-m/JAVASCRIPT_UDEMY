@@ -92,6 +92,14 @@
 -  Module (Import Export)
 -  padStart, padEnd TrimStart, TrimEnd  
   
+  
+  <h4 align="left">Error Handlings in JavaScript</h4>
+
+-  Different types of errors in JavaScript.
+-  Exercise Throw Custom Error Object
+-  Handle Errors with try, catch, and finally block
+
+  
 
 
 
