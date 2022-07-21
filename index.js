@@ -1345,10 +1345,27 @@ let pi = 3.141592654;
 function div(a, b) {
     if (b === 0) {
         //throw new Error('Second Parameter cannot be zero');
-        throw new SyntaxError('Second Parameter cannot be zero');
+        throw new SyntaxError('Second Parameter cannot be zero'); //! Throw Custom Error
         //throw new TypeError('Second Parameter cannot be zero');
         //throw new ReferenceError('Second Parameter cannot be zero');
     }
     return a / b;
 }
-console.log(div(5, 0))
+// console.log(div(5, 0))
+
+
+
+// * Handle Errors with try, catch, and finally block
+
+try {
+    console.log(div(5, 0));
+} catch (e) {
+    console.log(e);
+    console.log(e.name);
+    console.log(e.message);
+}
+finally {
+    console.log('Its Work')
+}
+
+console.log('Hi Vishnu')
