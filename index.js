@@ -1345,7 +1345,7 @@ let pi = 3.141592654;
 function div(a, b) {
     if (b === 0) {
         //throw new Error('Second Parameter cannot be zero');
-        throw new SyntaxError('Second Parameter cannot be zero');
+        throw new SyntaxError('Second Parameter cannot be zero'); //! Throw Custom Error
         //throw new TypeError('Second Parameter cannot be zero');
         //throw new ReferenceError('Second Parameter cannot be zero');
     }
