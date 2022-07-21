@@ -1283,42 +1283,58 @@
 
 // ! padStart ===> 0004
 
-let minute = '4';
-let hour = '8'
+// let minute = '4';
+// let hour = '8'
 
-console.log(minute.padStart(4));
-console.log(minute.padStart(4, 0));
+// console.log(minute.padStart(4));
+// console.log(minute.padStart(4, 0));
 
 // ! padEnd ===> 4000
 
-console.log(hour.padEnd(5, 0));
-console.log(hour.padEnd(5));
+// console.log(hour.padEnd(5, 0));
+// console.log(hour.padEnd(5));
 
 
 // ! Trim ===> remove all empty places
-let trimName0 = '   vishnu   ';
+// let trimName0 = '   vishnu   ';
 
-console.log(trimName0.length);
+// console.log(trimName0.length);
 
-trimName0 = trimName0.trim();
-console.log(trimName0);
-console.log(trimName0.length);
+// trimName0 = trimName0.trim();
+// console.log(trimName0);
+// console.log(trimName0.length);
 
 // ! TrimStart ===> remove left side empty places
 
-let trimName = '   vishnu   ';
+// let trimName = '   vishnu   ';
 
-console.log(trimName.length);
+// console.log(trimName.length);
 
-trimName = trimName.trimStart();
-console.log(trimName);
-console.log(trimName.length);
+// trimName = trimName.trimStart();
+// console.log(trimName);
+// console.log(trimName.length);
 
 // ! TrimEnd ===> remove right side empty places
 
-let trimName1 = '   vishnu   ';
-console.log(trimName1.length);
+// let trimName1 = '   vishnu   ';
+// console.log(trimName1.length);
 
-trimName1 = trimName1.trimEnd();
-console.log(trimName1);
-console.log(trimName1.length);
+// trimName1 = trimName1.trimEnd();
+// console.log(trimName1);
+// console.log(trimName1.length);
+
+//  !=== Error Handlings in JavaScript
+
+// * Different types of errors in JavaScript.
+
+// let java Is Fun = true; //!SyntaxError (not declared properly)
+// let javaIsFun = true; //!ReferenceError (not declared)
+
+let country = 'India';
+console.log(country.toUpperCase());
+let javaIsFun = true;
+// console.log(javaIsFun.toUpperCase()); //!typeError (bcz use wrong cmd)
+
+
+let pi = 3.141592654;
+console.log(pi.toFixed(101)); //! RangeError (1 to 100 is limit)
