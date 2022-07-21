@@ -1351,4 +1351,21 @@ function div(a, b) {
     }
     return a / b;
 }
-console.log(div(5, 0))
+// console.log(div(5, 0))
+
+
+
+// * Handle Errors with try, catch, and finally block
+
+try {
+    console.log(div(5, 0));
+} catch (e) {
+    console.log(e);
+    console.log(e.name);
+    console.log(e.message);
+}
+finally {
+    console.log('Its Work')
+}
+
+console.log('Hi Vishnu')
