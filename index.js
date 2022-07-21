@@ -1337,4 +1337,18 @@ let javaIsFun = true;
 
 
 let pi = 3.141592654;
-console.log(pi.toFixed(101)); //! RangeError (1 to 100 is limit)
+// console.log(pi.toFixed(101)); //! RangeError (1 to 100 is limit)
+
+
+// * Exercise Throw Custom Error Object
+
+function div(a, b) {
+    if (b === 0) {
+        //throw new Error('Second Parameter cannot be zero');
+        throw new SyntaxError('Second Parameter cannot be zero');
+        //throw new TypeError('Second Parameter cannot be zero');
+        //throw new ReferenceError('Second Parameter cannot be zero');
+    }
+    return a / b;
+}
+console.log(div(5, 0))
